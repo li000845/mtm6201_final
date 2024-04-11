@@ -1,7 +1,47 @@
-:root {
-    --primary-color: #0056b3; /* Example primary color */
-    --secondary-color: #6c757d; /* Example secondary color */
+body {
+    font-family: 'Arial', sans-serif;
 }
+.navbar {
+    background-color: #f8f9fa;
+}
+.nav-link {
+    color: #555;
+}
+.nav-link:hover {
+    color: #007bff;
+}
+.header-container {
+    background-color: #eee;
+    padding: 2rem;
+    text-align: center;
+}
+.main-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.button-container {
+    margin-top: 1rem;
+}
+.btn-custom {
+    margin: 0.5rem;
+}
+.hospital-scene {
+    position: fixed; /* fill the screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* under other content */
+    background-image: url('images/home_bg1x.png, image/home_bg2x');
+    background-size: cover;
+    background-position: center;
+}
+.content-overlay {
+    position: relative;
+    z-index: 10;
+}
+
 
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
@@ -19,10 +59,6 @@
 /* Accessibility Improvements */
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-a:hover, a:focus {
-    /* Styles for hover and focus to ensure keyboard navigability */
 }
 
 /* Example class to illustrate the use of a CSS variable */
