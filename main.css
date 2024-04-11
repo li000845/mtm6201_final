@@ -24,14 +24,20 @@ nav {
     margin-right: auto;
 }
 
-.background-image img {
-    width: 100%;
-    height: auto;
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
+
+.background-image img {
+    width: 100%;
+    height: auto;
+}
+
 .navigation a{
     color: #4a5568; /* Gray-700 */
     font-weight: 600;
@@ -46,7 +52,7 @@ nav {
 
 .main-content {
     text-align: center;
-    padding-top: 200px; /* Adjust based on actual spacing */
+    padding-top: 150px; /* Adjust based on actual spacing */
 }
 
 .main-content h1 {
@@ -153,19 +159,25 @@ nav {
 
 .profile-container {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    justify-content: space-around;
+    gap: 5rem;
+    position: relative;
+    margin-top: 80px;
   }
+
   .profile-card {
+    width: 600px;
     text-align: center;
-    max-width: 200px;
-  }
+    margin: 20px;
+}
+
   .profile-card img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
   .profile-card h2 {
     margin-top: 0.5rem;
     font-size: 1.2rem;
