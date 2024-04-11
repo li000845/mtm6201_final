@@ -33,11 +33,6 @@ nav {
     z-index: -1;
 }
 
-.background-image img {
-    width: 100%;
-    height: auto;
-}
-
 .navigation a{
     color: #4a5568; /* Gray-700 */
     font-weight: 600;
@@ -166,7 +161,7 @@ nav {
   }
 
   .profile-card {
-    width: 600px;
+    width: 500px;
     text-align: center;
     margin: 20px;
 }
