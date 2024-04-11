@@ -2,20 +2,20 @@
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
-    padding:0;
-    color: #000;
+    padding:30px 50px;
+    background: #fff;
 }
 
 .container {
     max-width: 100%;
-    padding: 1rem;
-}
+} 
 
 nav {
     padding: 1.25rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    
 }
 
 .logo img {
@@ -24,15 +24,52 @@ nav {
     margin-right: auto;
 }
 
-.navigation {
+.background-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.navigation a{
     color: #4a5568; /* Gray-700 */
     font-weight: 600;
     margin-right: 1rem;
+    text-decoration: none;
 }
 
 .navigation a:hover {
     color: #1a202c; /* Gray-900 */
     text-decoration: underline;
+}
+
+.main-content {
+    text-align: center;
+    padding-top: 200px; /* Adjust based on actual spacing */
+}
+
+.main-content h1 {
+    font-size: 5rem;
+    color: #000;
+    margin: 100px;
+}
+.header-buttons a {
+    padding: 1rem 2rem;
+    margin: 5rem;
+    border-radius: 50rem;
+    text-decoration: none;
+}
+.btn-primary {
+    background-color: #6d8dff;
+    color: #fff;
+    border: 2px solid #6d8dff;
+}
+
+.btn-outline {
+    background-color: #3A506B;
+    color: #fff;
+    border: 2px solid #3A506B;
 }
 
 .login-container {
@@ -89,31 +126,6 @@ nav {
 
 .forgot-password:hover {
     text-decoration: underline;
-}
-
-.header-buttons a {
-    padding: 0.5rem 1rem;
-    margin-right: 0.5rem;
-    border-radius: 0.375rem;
-    text-decoration: none;
-}
-
-.btn-primary {
-    background-color: #4299e1; /* Blue-500 */
-    color: white;
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: #4299e1; /* Blue-500 */
-    border: 2px solid #4299e1; /* Blue-500 */
-}
-
-.background-image img {
-    max-width: 100%;
-    height: auto;
-    size: cover;
-    position: center;
 }
 
 .profile-container {
