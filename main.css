@@ -210,13 +210,13 @@ nav {
     justify-content: center;
 }
 
-.dropdown h3, .calendar h3 {
+.section-department h3, .section-time, .calendar h3 {
     font-size: 1rem;
     color: #000; /* Adjust to match your design */
     margin-bottom: 10px;
 }
 
-.dropdown button, .calendar button {
+.section-department button, .section-time button {
     padding: 5px 20px;
     background: transparent;
     border: 1px solid #000;
@@ -270,3 +270,6 @@ nav {
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
   }
+
+
+  /* Responsive adjustments */
