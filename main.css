@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #0056b3; /* Example primary color */
+    --secondary-color: #6c757d; /* Example secondary color */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    /* Phone styles */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Pad styles */
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    /* Desktop styles */
+}
+
+/* Accessibility Improvements */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover, a:focus {
+    /* Styles for hover and focus to ensure keyboard navigability */
+}
+
+/* Example class to illustrate the use of a CSS variable */
+.primary-bg {
+    background-color: var(--primary-color);
+}
