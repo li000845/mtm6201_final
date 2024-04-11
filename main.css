@@ -1,12 +1,9 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    background-size: cover;
-    background-position: center;
-    color: #000 ; /* 如果需要，调整字体颜色以增强可读性 */
+    margin: 0;
+    padding:0;
+    color: #000;
 }
 
 .container {
@@ -24,39 +21,74 @@ nav {
 .logo img {
     height: 50px;
     width: auto;
+    margin-right: auto;
 }
 
-.nav-links a {
+.navigation {
     color: #4a5568; /* Gray-700 */
     font-weight: 600;
     margin-right: 1rem;
 }
 
-.nav-links a:hover {
+.navigation a:hover {
     color: #1a202c; /* Gray-900 */
+    text-decoration: underline;
 }
 
-header {
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
     text-align: center;
-    padding: 5rem 0;
 }
 
-.header-content {
-    width: 100%; /* 确保占满容器宽度，也可以是具体宽度 */
-    max-width: 40rem; /* 或其他具体值 */
-    text-align: center; /* 文字居中 */
+.input-group {
+    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 3.125rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-h2 {
-    font-size: 1.875rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c67ed;
+    color: white;
+    cursor: pointer;
+}
+
+.form-actions button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.form-actions .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #5c67ed;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
 .header-buttons a {
