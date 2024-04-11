@@ -11,7 +11,7 @@ body {
 } 
 
 nav {
-    padding: 1.25rem 0;
+    padding: 0rem;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -19,7 +19,7 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
     width: auto;
     margin-right: auto;
 }
@@ -56,7 +56,7 @@ nav {
 }
 .header-buttons a {
     padding: 1rem 2rem;
-    margin: 5rem;
+    margin-right: 3rem;
     border-radius: 50rem;
     text-decoration: none;
 }
@@ -72,16 +72,32 @@ nav {
     border: 2px solid #3A506B;
 }
 
+.back-arrow {
+    font-size: 40px; /* Adjust size as needed */
+    margin-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .login-container {
-    width: 300px;
-    margin: 50px auto;
     background: #fff;
+    width: 600px;
+    margin: 60px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #3A506B;
+    position: center;
+    border-radius: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
 }
 
 .login-form h2 {
-    text-align: center;
+    text-align: left;
+    display: inline-block;
+    font-size: 40px;
 }
 
 .input-group {
@@ -94,34 +110,41 @@ nav {
 }
 
 .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: calc(100% - 30px); /* considering padding */
+    padding: 15px;
+    background: #d3d3d3;
+    border: #d3d3d3;
 }
 
 .form-actions {
     text-align: center;
+    margin-top: 20px;
 }
 
 .form-actions button {
-    padding: 10px 20px;
+    padding: 10px 50px;
     border: none;
-    border-radius: 5px;
-    background-color: #5c67ed;
-    color: white;
-    cursor: pointer;
-}
-
-.form-actions button:not(:last-child) {
+    border-radius: 50px;
     margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.form-actions .forgot-password {
-    display: block;
-    margin-top: 10px;
-    color: #5c67ed;
-    text-decoration: none;
+.form-actions button[type="submit"] {
+    background: #3A506B; 
+    color: white;
+}
+
+.form-actions button[type="button"] {
+    background: #6d8dff;
+    color: #fff;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000;
+    text-decoration:none;
 }
 
 .forgot-password:hover {
