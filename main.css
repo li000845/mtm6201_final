@@ -228,7 +228,7 @@ nav {
 
 .section-department h3, .section-time, .calendar h3 {
     font-size: 1rem;
-    color: #000; /* Adjust to match your design */
+    color: #000; 
     margin-bottom: 10px;
 }
 
@@ -259,7 +259,7 @@ nav {
 }
 
 .calendar .selected {
-    background-color: #ff3b30; /* Adjust color for selected date */
+    background-color: #ff3b30; 
     color: white;
     border-radius: 50%;
 }
@@ -293,14 +293,14 @@ nav {
   @media only screen and (min-width: 601px) and (max-width: 900px) {
     /* Styles for tablet viewports here */
     .container {
-        width: 100%; /* Adjust width as necessary */
-        padding: 0 20px; /* Add some padding on the sides */
+        width: 100%; 
+        padding: 0 20px;
     }
 
     nav .navigation a {
-        padding: 10px; /* Adjust link padding */
-        display: block; /* Stack the links vertically */
-        margin: 10px 0; /* Add some margin for space between links */
+        padding: 10px; 
+        display: block; 
+        margin: 10px 0;
     }
 
     .main-content h1 {
@@ -313,7 +313,7 @@ nav {
     }
 
     .background-image img {
-        width: 100%; /* Make sure the background image is not larger than the screen width */
-        height: auto; /* Adjust the height automatically */
+        width: 50%; /* Make sure the background image is not larger than the screen width */
+        height: auto; 
     }
 }
